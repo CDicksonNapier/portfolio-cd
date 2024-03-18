@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --bg-color:#1f1f38;
+    --bg-color-variant:#2c2c6c;
+    --color-primary: #4db5ff;
+    --color-primary-variant: rgba(77,181,255,0.4);
+    --color-white:#fff;
+    --color-light:rgba(255,255,255,0.6);
+    --container-width-lg: 75%;
+    --container-width-md: 85%;
+    --container-width-sm: 90%;
+    --transition: all 400ms ease;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+   display: none;
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--color-white);
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    /* line-height: 1.7; */
+    background-image: url('../src/assets/bg-texture.png');
+}
+/* General CSS Styles  */
+
+.container{
+    width: var(--container-width-lg);
+    margin:  auto;
+
+}
+
+h1,h2,h3,h4,h5{
+    font-weight: 500;
+
+
+}
+
+h1{
+    font-size: 2.5rem;
+    
+}
+
+h4{
+    font-size: 1.25rem;
+    margin-bottom: 0;
+
+}
+small{
+    font-size: 1rem;
+    line-height: 0;
+}
+section{
+    margin-top:8rem;
+    /* height: 100vh; */
+}
+
+section>h2, section>h5{
+    text-align: center;
+    color: var(--color-light);
+    
+}
+
+section h2{
+    margin-bottom: 3rem;
+    color: var(--color-primary);
+}
+
+.text-light{
+    color: var(--color-light);
+}
+a{
+    color: var(--color-primary);
+    transition: var(--transition);
+}
+
+a:hover{
+    color: var(--color-white);
+}
+
+.btn{
+    width: max-content;
+    display: inline-block;
+    color: var(--color-primary);
+    padding: .75rem 1.2rem;
+    border-radius: .4rem;
+    cursor: pointer;
+    border: 1px solid var(--color-primary);
+    transition: var(--transition);
+}
+
+.btn:hover{
+    background-color: var(--color-white);
+    color: var(--bg-color);
+    border: transparent;
+}
+
+.btn-primary{
+    background-color: var(--color-primary);
+    color: var(--bg-color);
+
+}
+img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* media queries */
+
+/* tablets */
+@media screen and (max-width: 1024px){
+    .container{
+        width: var(--container-width-md);
+    }
+
+    section{
+        margin-top:8rem;
+    }
+    
+}
+/* Small Screen */
+@media screen and (max-width: 600px){
+    .container{
+        width: var(--container-width-sm);
+    }
+    section{
+        margin-top:8rem;
+    }
+
+    section > h2{
+        margin-top: 0rem;
+        margin-bottom: 0;
+    }
+    section > h5{
+        margin-top: 0rem;
+        margin-bottom: 0;
+    }
+    
+}

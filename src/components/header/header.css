@@ -1,0 +1,90 @@
+/* Header section component styling  */
+
+header{
+    height: 100vh;
+    padding-top: 7rem;
+    overflow: hidden;
+    
+  }
+.header__container{
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+/* CTA button styling */
+.cta{
+    margin-top: 2rem;
+    display: flex;
+    gap:1.2rem;
+    justify-content: center;
+    height: 3rem;
+    font-size: 1.5rem;
+    align-items: center;
+
+}
+
+/* Socials icons  */
+.header__socials{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    position: absolute;
+    bottom: 3rem;
+}
+
+.header__socials::after{
+    content: '';
+    width: 1px;
+    height: 2rem;
+    background-color: var(--color-primary);
+}
+
+/* Image of me  */
+
+.me{
+    width: 22rem;
+    height: 30rem;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    margin-top: 2rem;
+    border-radius: 12rem 12rem 0 0;
+}
+.me img{
+    border-radius: 6rem 0 6rem  0;
+    margin-top: 6rem;
+    height: 100%;
+    width: 100%;
+}
+
+/* Scroll Down  */
+
+.scroll__down{
+    position: absolute;
+    right: -2.3rem;
+    bottom:5rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: .9rem;
+
+}
+/* media queries  */
+/* tablets */
+/* @media screen and (max-width: 1024px){
+  header{
+    height:68vh;
+  }
+    
+} */
+/* Small Screen */
+@media screen and (max-width: 600px){
+  header{
+    height: 100vh;
+  }
+  .header__socials, .scroll__down{
+    display: none;
+  }
+    
+}
