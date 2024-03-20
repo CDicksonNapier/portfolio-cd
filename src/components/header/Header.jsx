@@ -4,7 +4,6 @@ import './header.css'
 import CTA from './CTA'
 import ME from '../../assets/me.jpg'
 import HeaderSocials from './HeaderSocials'
-import Fade from 'react-awesome-reveal'
 
 
 

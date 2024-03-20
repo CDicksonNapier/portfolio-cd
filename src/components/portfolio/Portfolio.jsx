@@ -5,7 +5,7 @@ import SBEES from '../../assets/sbees.png'
 import ARTFOLIO from '../../assets/art-portfolio-new.png'
 import NOTFLIX from '../../assets/notflix_logo.png'
 
-import Fade from 'react-awesome-reveal'
+
 
 
 

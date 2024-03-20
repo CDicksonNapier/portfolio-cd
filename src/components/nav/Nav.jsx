@@ -7,7 +7,7 @@ import { BiBook } from "react-icons/bi"
 import { MdDesignServices } from "react-icons/md"
 import { BiSolidMessageSquareDetail } from "react-icons/bi"
 import { useState } from 'react'
-import Fade from 'react-awesome-reveal'
+
 
 // Building the nav component - will sit slightly of the bottom of the screen and is fixed and will show whereever the user is on the screen 
 const Nav = () => {
